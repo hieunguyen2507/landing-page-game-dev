@@ -260,7 +260,7 @@ section p {
 }
 
 .testimonials-section .testimonials-card {
-    
+
     border-radius: 24px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
@@ -360,7 +360,7 @@ section p {
 /* Courses section */
 .courses-section {
     background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
-    padding: 70px 0;
+    padding: 50px 0;
     margin: 0 auto;
     padding-bottom: 120px;
 }
@@ -577,29 +577,35 @@ footer .copyright {
 
 /* mobile */
 @media (max-width: 1100px) {
-    .btn{
+    .btn {
         padding: 12px 32px;
     }
-    .container{
+
+    .container {
         padding: 0 100px;
     }
-    .navbar{
+
+    .navbar {
         left: 0;
         right: 0;
         padding: 20px 140px 20px 80px;
     }
-    .navbar.navbar.scrolled{
+
+    .navbar.navbar.scrolled {
         padding: 16px 140px 16px 80px;
     }
+
     header,
     .hero-section,
-    header .container{
+    header .container {
         max-height: 1000px;
     }
-    .hero-section{
+
+    .hero-section {
         flex-direction: column;
     }
-    .hero-section .left{
+
+    .hero-section .left {
         width: 80%;
         top: 10%;
         right: 11%;
@@ -607,46 +613,83 @@ footer .copyright {
         flex-direction: column;
         justify-content: center;
     }
-    .hero-section .left .btn{
+
+    .hero-section .left .btn {
         align-self: flex-start;
     }
 
-    .hero-section .right{
+    .hero-section .right {
         position: relative;
         left: -20%;
     }
+
     .hero-section .right img {
         width: 400px;
         height: 582px;
         vertical-align: middle;
         /* làm ảnh sát chân trang */
     }
-    .hero-section .achievement-card{
+
+    .hero-section .achievement-card {
         position: relative;
         margin-bottom: 80px;
         bottom: 100%;
     }
 
     .achievement-card.student-enrolled,
-    .achievement-card.overall-rating{
+    .achievement-card.overall-rating {
         left: unset;
         top: unset;
     }
-    .hero-section .achievement-cards{
+
+    .hero-section .achievement-cards {
         align-self: flex-start;
         margin: 40px;
     }
 
-    h2{
+    h2 {
         font-size: 40px;
     }
 
-    .testimonials-section{
+    .testimonials-section {
         flex-direction: column;
         align-items: center;
     }
 
-    .testimonials-section .testimonials-card{
+    .testimonials-section .testimonials-card {
         width: 100%;
+        margin-bottom: 40px
+    }
+
+    .testimonials-section .testimonials-card:last-child::before {
+        top: -40px;
+        left: 80px;
+        height: calc(100% + 80px);
+    }
+    .testimonials-section .testimonials-card:last-child{
+        transform: translateX(0px);
+    }
+    .testimonials-section .desktop-btn{
+        display: none;
+    }
+    .testimonials-section .mobile-btn{
+        display: block;
+        align-self: flex-start;
+        bottom: 150px;
+        order: 3;
+    }
+    .testimonials-section .right{
+        order: 1;
+    }
+    .testimonials-section .left{
+        position: relative;
+        bottom: 70px;
+        order: 2;
+    }
+    .testimonials-section{
+        margin-top: 50px;
+    }
+    .courses-section{
+        margin: 70px auto;
     }
 }
