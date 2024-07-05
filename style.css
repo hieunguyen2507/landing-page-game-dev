@@ -39,17 +39,16 @@ header {
     text-align: center;
     align-items: center;
     position: fixed;
-    width: 1134px;
+    width: 80%;
     height: 59px;
     top: 42px;
     z-index: 100;
-    left: 17%;
-    padding-right: 5%;
+    left: 10%;
     transition: all 500ms ease;
 }
 
 .navbar.scrolled {
-    background: var(--dark-color);
+    background: var(--light-blue-color);
     box-shadow: 0 16px 14px -8px rgba(0, 0, 0.3);
     border-radius: 8px;
     padding: 12px;
