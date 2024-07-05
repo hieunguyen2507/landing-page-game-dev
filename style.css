@@ -255,6 +255,7 @@ section p {
     display: flex;
     gap: 100px;
     align-items: center;
+    padding: 100px 0;
 }
 
 .testimonials-section .mobile-btn {
@@ -665,6 +666,7 @@ footer .copyright {
     /* testimonials section------ */
     .testimonials-section {
         flex-direction: column;
+        padding: 0px;
     }
 
     .testimonials-section .testimonials-card p {
