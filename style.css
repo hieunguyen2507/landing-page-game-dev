@@ -147,6 +147,7 @@ header {
     flex: 1;
     position: relative;
     top: -10%;
+    left: 5%;
 }
 
 /* cho div.right xuống cuối */
@@ -950,7 +951,7 @@ footer .copyright {
         width: 100%;
         position: relative;
         top: 50px;
-        padding: 10% 10% 0 10%;
+        padding: 5% 1% 0px 2%;
     }
 
     .testimonials-section .left {
@@ -972,6 +973,7 @@ footer .copyright {
         font-weight: 900;
         line-height: 36px;
         white-space: nowrap;
+        text-align: center;
     }
     .testimonials-section .testimonials-card .info{
         width: 70%;
@@ -994,17 +996,13 @@ footer .copyright {
     }
 
     .testimonials-section .features {
-        width: 350px;
-        height: 160px;
+        width: 100%;
     }
 
     .testimonials-section .right p {
         font-size: 16px;
         font-weight: 400;
         line-height: 32px;
-
-        width: 350px;
-        height: 128px;
         white-space: unset;
     }
 
@@ -1063,7 +1061,6 @@ footer .copyright {
 
     section p {
         position: relative;
-        width: 400px;
         font-size: 16px;
         font-weight: 400;
         line-height: 32px;
